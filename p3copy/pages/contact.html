@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="box">
+      <header>
+        <h1 class="title">ATLAS USIC</h1>
+        <nav class="navigation">
+          <div class="bar bar--about"><a href="./about.html">About</a></div>
+          <br />
+          <div class="bar bar--projects">
+            <a href="./projects.html">Porfolio</a>
+          </div>
+          <br />
+          <div class="bar bar--contact">
+            <a href="./contact.html">Contact me</a>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="side" id="left"></div>
+        <div class="inner">
+          <div class="content content--contact">
+            <span id="header-contact" class="content-column"
+              ><h3>Please send through a message via the form below</h3>
+
+              <form action="https://formspree.io/f/xayrrkqg" method="POST">
+                <label>Your Full Name:</label>
+
+                <input type="text" name="fullName" required />
+
+                <label> Your email:</label>
+
+                <input type="email" name="email" required />
+
+                <label> Your message:</label>
+
+                <textarea name="message" required></textarea>
+
+                <button type="submit" class="button button--submit">
+                  Send
+                </button>
+              </form>
+            </span>
+            
+            <span id="weblinks"
+              ><h3>Or find me here</h3>
+              <span id="links">
+               <a href="https://github.com/Raphide"> <img
+                  src="../images/github-icon-1-logo-svgrepo-com.svg"
+                  class="icon"
+                  id="github" alt="github logo" /></a>
+                <img
+                  src="../images/linkedin-fill-svgrepo-com.svg"
+                  class="icon"
+                  id="linkedin" alt="linkedin logo"
+              /></span>
+              
+            </span>
+          </div>
+        </div>
+        <div class="side" id="right"></div>
+      </main>
+      <footer>
+        <p>
+          Photo by
+          <a
+            href="https://unsplash.com/@parisbilal?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Paris Bilal</a
+          >
+          on
+          <a
+            href="https://unsplash.com/photos/a-blue-and-white-abstract-painting-of-a-womans-face-SpM6hfYI3u8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Unsplash</a
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
