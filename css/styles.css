@@ -16,6 +16,10 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100vh;
   background-color: #ff692d;
@@ -23,12 +27,25 @@ body {
   text-align: center;
   line-height: 90vh;
 }
+@media screen and (min-width: 350px) {
+  .splash {
+    flex-direction: column;
+    line-height: 10vh;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .splash {
+    flex-direction: row;
+    line-height: 90vh;
+  }
+}
 .splash h1 {
   font-size: 5em;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
   color: #ffffff;
+  margin: 0 1em;
 }
 
 .splash.display-none {
@@ -405,11 +422,9 @@ img {
 @keyframes myAnim {
   0% {
     opacity: 0;
-    transform: translateX(-50px);
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
   }
 }
 
