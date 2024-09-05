@@ -70,7 +70,7 @@ body {
 }
 @media screen and (min-width: 350px) {
   .box {
-    margin: 0em 1em 0em 1em;
+    margin: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -326,6 +326,7 @@ main {
 @media screen and (min-width: 1200px) {
   .content--proj {
     flex-direction: row-reverse;
+    height: 45vh;
   }
 }
 
@@ -383,6 +384,8 @@ p {
   #text {
     flex-direction: row-reverse;
     margin-right: 2em;
+    margin-top: 2em;
+    align-self: flex-start;
   }
 }
 
@@ -598,6 +601,7 @@ footer p {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 350px) {
   #skills img {
@@ -616,6 +620,13 @@ footer p {
     max-height: 5vh;
     max-width: 5vw;
   }
+}
+
+#repo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5em;
 }
 
 /*# sourceMappingURL=styles.css.map */
