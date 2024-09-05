@@ -25,7 +25,6 @@ body {
   background-color: #ff692d;
   z-index: 200;
   text-align: center;
-  line-height: 90vh;
 }
 @media screen and (min-width: 350px) {
   .splash {
@@ -36,7 +35,6 @@ body {
 @media screen and (min-width: 1200px) {
   .splash {
     flex-direction: row;
-    line-height: 90vh;
   }
 }
 .splash h1 {

@@ -27,14 +27,14 @@ body {
   background-color: #ff692d;
   z-index: 200;
   text-align: center;
-  line-height: 90vh;
+
   @include q.phone {
   flex-direction: column;
   line-height: 10vh;
   }
   @include q.laptop {
     flex-direction: row;
-    line-height: 90vh;
+
   }
   h1 {
     font-size: 5em;
